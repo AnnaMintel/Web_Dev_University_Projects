@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin: 0;
+        }
+        .header{
+            display: flex;
+            background-color:rgb(140, 179, 230);
+            height: 80px;
+            text-align: start;
+            padding-left: 2%;
+            margin-bottom: 0.5%;
+        }
+        .mainPage{
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+        .menuBar{
+            background-color: rgb(238, 236, 236);
+            width: 15%;
+            padding-left: 1%;
+        }
+        .main{
+            background-color: white;
+            width: 80%;
+            padding: 1%;
+        }
+        #math {
+            position: relative;
+        }
+        #math img {
+            position: absolute;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Заголовок страницы</h1>
+    </div>
+
+    <div class="mainPage">
+        <div class="menuBar">
+            <ul>
+                <li> <a href="#">Первый раздел</a></li>
+                <li><a href="#">Второй раздел</a></li>
+                <li><a href="#">Третий раздел</a></li>
+                <li><a href="#">Четвертый раздел</a></li>
+                <li ><a href="#">Пятый раздел</a></li> 
+            </ul>           
+        </div>
+
+        <div class="main">
+            <h2>Основная часть страницы</h2>
+            <p>Основной текст страницы может содержать абзацы.</p>
+            <p>В абзацах может быть <b>жирный шрифт</b>, может быть 
+                <em>курсивный шрифт</em>, а может быть и <b><em>жирный и курсивный шрифт.</em></b></p>
+            <p id="math" >Можно даже попытаться изобразить подобие математических формул:
+                <img src="./math.png"/> </p>
+            <p>Если текст не нравится, его можно <s>перечеркнуть</s>.</p>
+            <p>В текст можно вставить картинку:<img src="html" alt=" "/></p>
+            <p>Умные мысли лучше всего показывать в виде списков:</p>
+
+            <ol>
+                <li>Первая умная мысль</li>
+                <li>Вторая умная мысль</li>
+                <li>Третья умная мысль</li>
+                <li value="5"> Пятая умная мысль (т.к. четвертую лучше никому не показывать)</li>
+            </ol>
+
+            <h3>Пользователя можно попросить заполнить форму</h3>
+            <p>Имя: <input type="text"/></p> 
+            <p>Фамилия: <input type="text"/></p> 
+            <p>Отчество: <input type="text"/></p>
+
+            <p>Пол:</p>
+           <input type="radio"/> <label>мужской</label>
+           <br/>
+           <input type="radio"/> <label>женский</label>
+
+            <p>И отправить данные куда следует:</p>
+            <button>Отправить</button>
+
+        </div>
+    </div>
+
+</body>
+</html>
