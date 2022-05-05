@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let rad = prompt('Enter the angle in radians:');
+
+        let gradus = Math.trunc(rad*(180/3.14));
+        let minutes = Math.trunc(rad*(60*180/3.14));
+        let seconds = Math.trunc(rad*(3600*180/3.14));
+
+    alert(` gradus: ${gradus}\n minutes: ${minutes}\n seconds : ${seconds}`)
+        
+    </script>
+</body>
+
+</html>
