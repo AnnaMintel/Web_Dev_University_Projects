@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let sum = prompt('введите сумму в рублях: ');
+        let rub;
+        sum
+        if (sum[sum.length - 2] != 1 && sum[sum.length - 1] == 1) {
+            rub = 'рубль'
+            alert(`${sum} ${rub}`)
+
+        } else if (sum[sum.length - 2] != 1 &&
+            (sum[sum.length - 1] >= 2 && sum[sum.length - 1] <= 4)) {
+            rub = 'рубля'
+            alert(`${sum} ${rub}`)
+
+        } else {
+            rub = 'рублей'
+            alert(`${sum} ${rub}`)
+        }
+
+    </script>
+</body>
+
+</html>
