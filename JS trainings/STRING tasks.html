@@ -43,9 +43,25 @@
         }
         console.log(`Ответ на задание № 2: ${words}`);
 
-
         // 3. Имеется строка с текстом. Вывести текст, составленный из последних букв всех слов.
+        let text = 'Одного, двух, трех, четырех!';
+        let newText = '';
+        let word = '';
+
+        for (let i = 0; i < text.length; i++) {
+            if ( text[i] == ' ' || text[i]  == ',' || text[i]  == '.' ||
+            text[i]  == '?' || text[i]  == '!' ) {
+                newText += '*';
+            } else newText += text[i];
+        }
+
+        for (let j = 0; j < newText.length; j++) {
+            if (newText[j] != '*' && newText[j+1] == '*'){
+                word = word.concat(newText[j]);
+            }
+        }
         
+        console.log(`Ответ на задание № 3: ${word}`);
 
     </script>
 </body>
