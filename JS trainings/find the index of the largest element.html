@@ -12,13 +12,23 @@
     <script>
 
         // 1. Создать массив и найти в нем номер наибольшего элемента
-        let arr = [ 1, 107, 48, 17, 100, 1032, 3];
+        let arr = [1, 107, 48, 17, 100, 1032, 3];
         let max = Math.max.apply(null, arr);
         let index = arr.indexOf(max);
+        console.log( `Ответ на задание № 1: ${index}` );
 
-        console.log(index);
+        // 2. Создать массив с целочисленными значениями, и посчитать сумму элементов кратных трем
+        let num = [3, 27, 100, 17, 99, 1000, 2];
+        let sum = 0;
+        for (let i = 0; i < num.length; i++) {
+            if (num[i] % 3 == 0) {
+                sum = sum + num[i];
+            }
+        }
+        console.log( `Ответ на задание № 2: ${sum}` );
 
-        // 
+
+
 
     </script>
 </body>
