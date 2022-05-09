@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // 1. Найти в строке не только запятые, но и другие знаки препинания. Подсчитать общее их количество
+        let phrase = 'Раз, два, три. Четыре! Пять, шесть??';
+        let count = 0;
+
+        for (let i = 0; i < phrase.length; i++) {
+            if (phrase[i] == ',' || phrase[i] == '.' || phrase[i] == '!' || phrase[i] == '?' ){
+                count++;
+            } 
+        }
+        console.log(`Ответ на задание № 1: ${count}`);
+
+        /* 2. Имеется строка с текстом. Подсчитать количество слов в тексте.
+        Желательно учесть, что слова могут разделяться несколькими пробелами, в
+        начале и конце текста также могут быть пробелы, но могут и отсутствовать. */
+        let sentence = 'Раз  , два, три. Четыре! Пять, шесть?  ';
+        let newSentence = '';
+        let words = 0;
+        
+        for (let i = 0; i < sentence.length; i++) {
+            if ( sentence[i] == ' ' || sentence[i]  == ',' || sentence[i]  == '.' ||
+            sentence[i]  == '?' || sentence[i]  == '!' ) {
+                newSentence += '*';
+            } else newSentence += sentence[i];
+        }
+
+        for (let j = 0; j < newSentence.length; j++) {
+            if (newSentence[j] != '*' && newSentence[j+1] == '*'){
+                words++;
+            }
+        }
+        console.log(`Ответ на задание № 2: ${words}`);
+
+
+        // 3. Имеется строка с текстом. Вывести текст, составленный из последних букв всех слов.
+        
+
+    </script>
+</body>
+
+</html>
