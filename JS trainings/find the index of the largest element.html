@@ -11,44 +11,12 @@
 <body>
     <script>
 
-        // 1. Создать массив и найти в нем номер наибольшего элемента
-        let arr = [1, 107, 48, 17, 100, 1032, 3];
+        let num = prompt('введите числа через пробел: ');
+        let arr = num.split(' ');
+
         let max = Math.max.apply(null, arr);
-        let index = arr.indexOf(max);
-        console.log(`Ответ на задание № 1: ${index}`);
 
-        // 2. Создать массив с целочисленными значениями, и посчитать сумму элементов кратных трем
-        let num = [3, 27, 100, 17, 99, 1000, 2];
-        let sum = 0;
-        for (let i = 0; i < num.length; i++) {
-            if (num[i] % 3 == 0) {
-                sum = sum + num[i];
-            }
-        }
-        console.log(`Ответ на задание № 2: ${sum}`);
-
-        /* 3. Создать массив с целочисленными значениями, и посчитать сумму элементов 
-        между максимальным и минимальным элементами массива */
-        let array = [3000, 27, 17, 99, 1000, 19, 1];
-        let maxim = Math.max.apply(null, array);
-        let minim = Math.min.apply(null, array);
-        let maxId = array.indexOf(maxim);
-        let minId = array.indexOf(minim);
-        let resultArray = [];
-        let summ = 0;
-
-        if(maxId > minId) {
-            resultArray = array.slice(minId+1, maxId)
-        } else {
-            resultArray = array.slice(maxId+1, minId)
-        }
-
-        for(let i = 0; i < resultArray.length; i++) {
-            summ = summ + resultArray[i];
-        }
-
-        console.log(`Ответ на задание № 3: ${summ}`);
-
+        alert(`наибольшее число: ${max}`);
 
     </script>
 </body>
