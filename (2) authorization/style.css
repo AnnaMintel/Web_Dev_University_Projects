@@ -1,0 +1,29 @@
+body {
+  background-color: #f1cbcb;
+}
+
+header,
+.fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #eee;
+  border-radius: 10px;
+}
+
+.fields button {
+  padding: 5px;
+  margin: 5px 0;
+  background-color: rgb(231, 218, 218);
+  box-shadow: 5px 5px 5px black;
+}
+
+.error {
+    border: 2px solid red;
+}
