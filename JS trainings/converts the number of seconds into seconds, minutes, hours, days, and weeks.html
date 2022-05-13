@@ -11,16 +11,14 @@
 <body>
     <script>
 
-        let sec = prompt('Enter number of seconds to convert it:');
+        let s = prompt('Enter number of seconds to convert it:');
 
-        let seconds = sec;
-        let minutes = sec / 60;
-        let hours = sec / 3600;
-        let days = sec / 86400;
-        let weeks = sec / 604800;
+        sec = s % 60;
+        m = (s - sec) / 60;
+        min = m % 60;
+        h = (m - min) / 60;
+        alert(h + " часов " + min + " минут " + sec + " секунд");
 
-    alert(` seconds: ${seconds},\n minutes: ${minutes},\n hours: ${hours},\n days: ${days},\n weeks: ${weeks}`)
-        
     </script>
 </body>
 

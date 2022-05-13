@@ -5,13 +5,13 @@ const blue = document.getElementById("blue");
 const green = document.getElementById("green");
 
 red.addEventListener("click", function () {
-    mainSquare.style.background = 'red';
+    mainSquare.style.borderColor = 'red';
 })
-
+ 
 blue.addEventListener("click", function () {
-    mainSquare.style.background = 'blue';
+    mainSquare.style.borderColor = 'blue';
 })
 
 green.addEventListener("click", function () {
-    mainSquare.style.background = 'green';
+    mainSquare.style.borderColor = 'green';
 })

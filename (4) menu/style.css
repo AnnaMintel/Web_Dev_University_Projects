@@ -1,0 +1,33 @@
+body {
+  background-color: #eaebd6;
+}
+
+header, .content  {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.mainMenu {
+  width: 200px;
+  height: 40px;
+  border: 2px solid rgb(77, 76, 69);
+  background-color: #f6f868;
+  font-size: 28px;
+  text-align:center;
+  z-index: 2222;
+  cursor: pointer;
+}
+
+ ul {
+   overflow: hidden;
+   opacity: 0;
+   height: 0;
+   padding: 0px;
+   margin: 10px 0px;
+ }
+
+ li {
+   list-style: none;
+   border: 1px solid gray;
+ }
